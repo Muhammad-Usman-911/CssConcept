@@ -1,0 +1,42 @@
+<!-- 
+        OVERRINDING 
+     over riding inherited body class we create another class,
+     your h1 element will pick class from top to bottom so the element in last will be picked
+     As id #orange-text has created so it will be chosed...
+     but inline styling will chose over all...
+
+     We just proved that inline styles will override all the CSS declarations in your style element.
+      
+      But !important keyword make the style element the most important 
+      can try them all one by one
+ -->
+<style>
+  body {
+    background-color: black;
+    font-family: monospace;
+    color: green;
+  }
+  h1
+  {
+    font-family: monospace;
+    font-size: 80px;
+    text-align: center;
+  }
+  input
+  {
+    color: white;
+  }
+  #orange-text {
+    color: orange;
+  }
+  .pink-text  {
+    color: pink !important;
+  }
+  .blue-text {
+    color: blue;
+  }
+</style>
+<body>
+<h1 id="orange-text" class="pink-text blue-text" style="color: white">Hello World!</h1>
+</body>
+
